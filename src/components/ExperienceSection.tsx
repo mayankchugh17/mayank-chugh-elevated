@@ -12,14 +12,14 @@ const timeline = [
   },
   {
     type: "edu",
-    title: "Master of Computer Applications (MCA)",
+    title: "Masters of Computer Applications (MCA)",
     org: "Chandigarh University",
     period: "2024 - Present",
     desc: "Focused on software engineering, data structures, and real-world project development. Active in placement preparation.",
   },
   {
     type: "edu",
-    title: "Bachelor's Degree",
+    title: "Bachelor's of Vocation (Software Development)",
     org: "Kurukshetra University",
     period: "2021 - 2024",
     desc: "Built a strong foundation in programming, databases, and web development fundamentals.",
