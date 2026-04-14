@@ -66,7 +66,7 @@ const ContactSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Phone size={18} className="text-primary" />
                 </div>
-                <span>Immediately Available</span>
+                <span>+91 9996602635</span>
               </div>
             </div>
           </motion.div>
