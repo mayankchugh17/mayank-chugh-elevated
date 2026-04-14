@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Rocket, GraduationCap } from "lucide-react";
+import { Code2, Rocket, GraduationCap, BrainCircuit } from "lucide-react";
 
 const cards = [
   {
     icon: Code2,
     title: "MERN Stack Developer",
     desc: "Specializing in MongoDB, Express.js, React.js, and Node.js to build end-to-end web applications.",
+  },
+  {
+    icon: BrainCircuit,
+    title: "AI Enthusiast",
+    desc: "Exploring Generative AI, prompt engineering, and AI-powered web apps to build smarter and more interactive user experiences.",
   },
   {
     icon: Rocket,
@@ -40,7 +45,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {cards.map((card, i) => (
             <motion.div
               key={card.title}

@@ -54,19 +54,19 @@ const ContactSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Mail size={18} className="text-primary" />
                 </div>
-                <span>mayankchugh@email.com</span>
+                <span>mayankchugh1700@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <MapPin size={18} className="text-primary" />
                 </div>
-                <span>India</span>
+                <span>Mohali, Punjab</span>
               </div>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Phone size={18} className="text-primary" />
                 </div>
-                <span>Available for remote work</span>
+                <span>Immediately Available</span>
               </div>
             </div>
           </motion.div>

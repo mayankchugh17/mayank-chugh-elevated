@@ -7,42 +7,54 @@ const projects = [
   {
     title: "AI Support Assistant",
     tech: ["Next.js", "Gemini API", "REST APIs"],
-    description: "AI-powered assistant using Gemini API and Next.js, automating 70%+ of user queries and improving response time by 50%.",
+    description:
+      "AI-powered assistant using Gemini API and Next.js, automating 70%+ of user queries and improving response time by 50%.",
     details: [
       "Integrated REST APIs for seamless communication between frontend and AI services",
       "Designed a scalable solution adaptable to e-commerce and business platforms",
       "Increased support efficiency by 60%",
     ],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/mayankchugh17/AI-customer-support",
+    demo: "https://ai-customer-support-chi-gules.vercel.app/",
     color: "from-primary/20 to-secondary/20",
   },
   {
-    title: "Stock Monitoring Tool",
-    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "AWS"],
-    description: "Full-stack real-time stock tracking dashboard built with MERN stack and deployed on AWS.",
+    title: "Vegist - Grocery Delivery Website",
+    tech: ["React.js", "Tailwind CSS", "Responsive Design"],
+    description:
+      "A modern, fully responsive grocery delivery website with smooth UI/UX, optimized layouts, and mobile-first design approach.",
     details: [
-      "Real-time stock data tracking and visualization",
-      "Interactive dashboard with live updates",
-      "Deployed and scaled on AWS infrastructure",
+      "Designed clean and modern UI inspired by real-world e-commerce platforms",
+      "Fully responsive across mobile, tablet, and desktop devices",
+      "Optimized user experience with smooth navigation and interactive components",
+      "Improved visual engagement using animations and structured layouts",
     ],
-    github: "#",
-    demo: "#",
-    color: "from-secondary/20 to-primary/20",
+    github: "https://github.com/mayankchugh17/vegist", // add if available
+    demo: "https://vegist-two.vercel.app/",
+    color: "from-green-400/20 to-lime-300/20",
   },
-  {
-    title: "Content Management System",
-    tech: ["React.js", "Node.js", "MongoDB", "REST APIs"],
-    description: "Full-stack CMS with secure admin dashboard, improving content management efficiency by 60%.",
-    details: [
-      "Real-time content updates using RESTful APIs and MongoDB",
-      "Reduced manual update effort by 70%",
-      "Responsive and user-friendly UI, enhancing engagement by 40%",
-    ],
-    github: "#",
-    demo: "#",
-    color: "from-primary/20 to-secondary/10",
-  },
+
+ {
+  title: "Content Management System",
+  tech: ["React.js", "Node.js", "MongoDB", "REST APIs"],
+  description:
+    "Full-stack CMS with secure admin dashboard, improving content management efficiency by 60%.",
+  details: [
+    <>
+      For accessing the admin panel:
+      <div className="bg-muted/50 border border-border mt-2 p-3 rounded-lg font-mono text-sm">
+        <p><strong>Email:</strong> admin1@gmail.com</p>
+        <p><strong>Password:</strong> admin1234</p>
+      </div>
+    </>,
+    "Real-time content updates using RESTful APIs and MongoDB",
+    "Reduced manual update effort by 70%",
+    "Responsive and user-friendly UI, enhancing engagement by 40%",
+  ],
+  github: "https://github.com/mayankchugh17/Backend-AdminPannel",
+  demo: "https://backend-adminpannel-production.up.railway.app/dashboard",
+  color: "from-primary/20 to-secondary/10",
+}
 ];
 
 const filters = ["All", "React.js", "Next.js", "Node.js", "MongoDB"];
@@ -51,11 +63,14 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const [activeFilter, setActiveFilter] = useState("All");
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null);
 
-  const filtered = activeFilter === "All"
-    ? projects
-    : projects.filter((p) => p.tech.includes(activeFilter));
+  const filtered =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((p) => p.tech.includes(activeFilter));
 
   return (
     <section id="projects" className="section-padding relative" ref={ref}>
@@ -66,7 +81,9 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="font-mono text-primary text-sm tracking-widest uppercase mb-3">Projects</p>
+          <p className="font-mono text-primary text-sm tracking-widest uppercase mb-3">
+            Major Projects
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold">
             Featured <span className="glow-text">work</span>
           </h2>
@@ -109,17 +126,29 @@ const ProjectsSection = () => {
                 className="glass rounded-2xl overflow-hidden group cursor-none hover:border-primary/30 transition-all duration-300"
                 whileHover={{ y: -8, scale: 1.02 }}
               >
-                <div className={`h-40 bg-gradient-to-br ${project.color} flex items-center justify-center`}>
+                <div
+                  className={`h-40 bg-gradient-to-br ${project.color} flex items-center justify-center`}
+                >
                   <span className="text-4xl font-bold text-foreground/10 group-hover:text-foreground/20 transition-colors">
-                    {project.title.split(" ").map(w => w[0]).join("")}
+                    {project.title
+                      .split(" ")
+                      .map((w) => w[0])
+                      .join("")}
                   </span>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((t) => (
-                      <span key={t} className="text-xs font-mono px-2 py-1 rounded-md bg-muted text-muted-foreground">
+                      <span
+                        key={t}
+                        className="text-xs font-mono px-2 py-1 rounded-md bg-muted text-muted-foreground"
+                      >
                         {t}
                       </span>
                     ))}
@@ -154,25 +183,47 @@ const ProjectsSection = () => {
               >
                 <X size={20} />
               </button>
-              <h3 className="text-2xl font-bold mb-2 glow-text">{selectedProject.title}</h3>
-              <p className="text-muted-foreground mb-4">{selectedProject.description}</p>
+              <h3 className="text-2xl font-bold mb-2 glow-text">
+                {selectedProject.title}
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                {selectedProject.description}
+              </p>
               <ul className="space-y-2 mb-6">
                 {selectedProject.details.map((d, i) => (
-                  <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                  <li
+                    key={i}
+                    className="text-sm text-muted-foreground flex items-start gap-2"
+                  >
                     <span className="text-primary mt-1">▸</span> {d}
                   </li>
                 ))}
               </ul>
               <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.tech.map((t) => (
-                  <span key={t} className="text-xs font-mono px-2 py-1 rounded-md bg-muted text-muted-foreground">{t}</span>
+                  <span
+                    key={t}
+                    className="text-xs font-mono px-2 py-1 rounded-md bg-muted text-muted-foreground"
+                  >
+                    {t}
+                  </span>
                 ))}
               </div>
               <div className="flex gap-4">
-                <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer" className="btn-primary-glow text-sm !px-5 !py-2 flex items-center gap-2">
+                <a
+                  href={selectedProject.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary-glow text-sm !px-5 !py-2 flex items-center gap-2"
+                >
                   <ExternalLink size={16} /> Live Demo
                 </a>
-                <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="btn-outline-glow text-sm !px-5 !py-2 flex items-center gap-2">
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline-glow text-sm !px-5 !py-2 flex items-center gap-2"
+                >
                   <Github size={16} /> GitHub
                 </a>
               </div>
