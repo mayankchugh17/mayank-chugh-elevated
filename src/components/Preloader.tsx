@@ -37,7 +37,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
               animate={{ letterSpacing: "0.1em", opacity: 1 }}
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              MC
+              MK
             </motion.h1>
             <div className="w-48 h-[2px] bg-muted rounded-full overflow-hidden">
               <motion.div
