@@ -18,7 +18,7 @@ const Index = () => {
 
   return (
     <>
-      {loading && <Preloader onComplete={handleComplete} />}
+    
       <CustomCursor />
       <ScrollProgress />
       <ParticleBackground />
