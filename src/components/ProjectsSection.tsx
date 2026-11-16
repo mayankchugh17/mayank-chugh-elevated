@@ -5,56 +5,109 @@ import { AnimatePresence } from "framer-motion";
 
 const projects = [
   {
-    title: "AI Support Assistant",
-    tech: ["Next.js", "Gemini API", "REST APIs"],
+    title: "KG CRM Solutions – Official Website Development",
+    tech: ["Next.js", "React.js", "JavaScript", "REST APIs", "SEO"],
     description:
-      "AI-powered assistant using Gemini API and Next.js, automating 70%+ of user queries and improving response time by 50%.",
+      "Developed and optimized the company's official website using Next.js, improving online presence and supporting business lead generation through optimized user experiences.",
     details: [
-      "Integrated REST APIs for seamless communication between frontend and AI services",
-      "Designed a scalable solution adaptable to e-commerce and business platforms",
-      "Increased support efficiency by 60%",
+      "Developed responsive website pages and reusable components using Next.js and React.js",
+      "Implemented lead capture forms, meeting booking functionality, and strategic CTAs to convert visitors into potential clients",
+      "Optimized website SEO, metadata, and page performance to improve organic visibility",
+      "Integrated REST APIs and third-party services for dynamic website functionality",
+      "Contributed to generating qualified business inquiries through the company's official website",
     ],
-    github: "https://github.com/mayankchugh17/AI-customer-support",
-    demo: "https://ai-customer-support-chi-gules.vercel.app/",
+    demo: "https://kgcrmsolutions.com/",
     color: "from-primary/20 to-secondary/20",
   },
+
   {
-    title: "Vegist - Grocery Delivery Website",
-    tech: ["React.js", "Tailwind CSS", "Responsive Design"],
+    title: "True Shades – Blinds & Curtains Website",
+    tech: ["Next.js", "React.js", "JavaScript", "REST APIs", "SEO"],
     description:
-      "A modern, fully responsive grocery delivery website with smooth UI/UX, optimized layouts, and mobile-first design approach.",
+      "Developed a business website for an Australian window furnishings company, showcasing custom blinds and curtains with a focus on user experience, service presentation, and customer lead generation.",
     details: [
-      "Designed clean and modern UI inspired by real-world e-commerce platforms",
-      "Fully responsive across mobile, tablet, and desktop devices",
-      "Optimized user experience with smooth navigation and interactive components",
-      "Improved visual engagement using animations and structured layouts",
+      "Developed responsive pages to showcase roller blinds, sheer curtains, and custom window furnishing solutions",
+      "Implemented product sections, customer testimonials, FAQs, and service process layouts",
+      "Designed consultation booking and inquiry forms to convert website visitors into potential customers",
+      "Optimized website structure, navigation, and user experience across desktop and mobile devices",
+      "Implemented clear calls to action to encourage customer inquiries and consultation requests",
     ],
-    github: "https://github.com/mayankchugh17/vegist", // add if available
-    demo: "https://vegist-two.vercel.app/",
+    demo: "https://trueshadeblindsandcurtains.com.au/",
     color: "from-green-400/20 to-lime-300/20",
   },
 
- {
-  title: "Content Management System",
-  tech: ["React.js", "Node.js", "MongoDB", "REST APIs"],
-  description:
-    "Full-stack CMS with secure admin dashboard, improving content management efficiency by 60%.",
-  details: [
-    <>
-      For accessing the admin panel:
-      <div className="bg-muted/50 border border-border mt-2 p-3 rounded-lg font-mono text-sm">
-        <p><strong>Email:</strong> admin1@gmail.com</p>
-        <p><strong>Password:</strong> admin1234</p>
-      </div>
-    </>,
-    "Real-time content updates using RESTful APIs and MongoDB",
-    "Reduced manual update effort by 70%",
-    "Responsive and user-friendly UI, enhancing engagement by 40%",
-  ],
-  github: "https://github.com/mayankchugh17/Backend-AdminPannel",
-  demo: "https://backend-adminpannel-production.up.railway.app/dashboard",
-  color: "from-primary/20 to-secondary/10",
-}
+  {
+    title: "Epoxy Time – Flooring Business Website",
+    tech: ["Next.js", "React.js", "JavaScript", "REST APIs", "SEO"],
+    description:
+      "Developed a responsive business website for an Australian epoxy flooring company, showcasing flooring solutions, project galleries, and service offerings with a focus on customer engagement and lead generation.",
+    details: [
+      "Built responsive pages showcasing residential and commercial flooring services",
+      "Developed product sections, project galleries, testimonials, and interactive FAQ sections",
+      "Implemented free quote inquiry forms and strategic CTAs to generate potential customer leads",
+      "Created service area and business information sections to improve customer accessibility",
+      "Optimized website navigation, mobile responsiveness, and SEO structure",
+    ],
+    demo: "https://epoxy.crescaler.com/",
+    color: "from-primary/20 to-secondary/20",
+  },
+
+  {
+    title: "CELPIP AI – AI-Powered Learning Platform",
+    tech: ["Next.js", "React.js", "JavaScript", "AI Integration", "REST APIs"],
+    description:
+      "Developed a web platform for CELPIP test preparation, focusing on AI-powered learning experiences, user engagement, and accessible educational resources.",
+    details: [
+      "Developed responsive user interfaces for an online CELPIP preparation platform",
+      "Integrated AI-powered functionality to support digital learning experiences",
+      "Implemented reusable components and structured layouts for better maintainability",
+      "Optimized website responsiveness and navigation across desktop and mobile devices",
+      "Designed user-focused sections and calls to action to improve platform engagement",
+    ],
+    demo: "https://celpipapp.crescaler.com/",
+    color: "from-green-400/20 to-lime-300/20",
+  },
+
+  {
+    title: "WM – Web Application Development",
+    tech: ["Next.js", "React.js", "JavaScript", "REST APIs"],
+    description:
+      "Developed a responsive web application with a focus on intuitive user interfaces, functional workflows, and seamless user experience.",
+    details: [
+      "Developed reusable UI components and responsive layouts",
+      "Implemented dynamic functionality and API integrations",
+      "Optimized application performance and cross-device compatibility",
+      "Improved navigation and user interaction through structured UI development",
+    ],
+    demo: "https://wm.crescaler.com/",
+    color: "from-primary/20 to-secondary/20",
+  },
+
+  {
+    title: "Content Management System",
+    tech: ["React.js", "Node.js", "MongoDB", "REST APIs"],
+    description:
+      "Full-stack CMS with secure admin dashboard, improving content management efficiency by 60%.",
+    details: [
+      <>
+        For accessing the admin panel:
+        <div className="bg-muted/50 border border-border mt-2 p-3 rounded-lg font-mono text-sm">
+          <p>
+            <strong>Email:</strong> admin1@gmail.com
+          </p>
+          <p>
+            <strong>Password:</strong> admin1234
+          </p>
+        </div>
+      </>,
+      "Real-time content updates using RESTful APIs and MongoDB",
+      "Reduced manual update effort by 70%",
+      "Responsive and user-friendly UI, enhancing engagement by 40%",
+    ],
+    github: "https://github.com/mayankchugh17/Backend-AdminPannel",
+    demo: "https://backend-adminpannel-production.up.railway.app/dashboard",
+    color: "from-green-400/20 to-lime-300/20",
+  },
 ];
 
 const filters = ["All", "React.js", "Next.js", "Node.js", "MongoDB"];
@@ -218,14 +271,16 @@ const ProjectsSection = () => {
                 >
                   <ExternalLink size={16} /> Live Demo
                 </a>
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline-glow text-sm !px-5 !py-2 flex items-center gap-2"
-                >
-                  <Github size={16} /> GitHub
-                </a>
+                {selectedProject.github && (
+                  <a
+                    href={selectedProject.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline-glow text-sm !px-5 !py-2 flex items-center gap-2"
+                  >
+                    <Github size={16} /> GitHub
+                  </a>
+                )}
               </div>
             </motion.div>
           </motion.div>
