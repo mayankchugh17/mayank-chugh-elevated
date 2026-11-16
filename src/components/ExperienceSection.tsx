@@ -5,16 +5,23 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const timeline = [
   {
     type: "work",
-    title: "MERN Stack Developer Intern",
+    title: "Software Developer",
+    org: "KG CRM Solutions",
+    period: "April 2026 - Present",
+    desc: "Developing responsive web applications using React.js and Next.js, integrating REST APIs and AI-powered features, building reusable components, and optimizing website performance and user experience.",
+  },
+  {
+    type: "work",
+    title: "Full Stack Developer Intern",
     org: "Xportsoft Technologies",
-    period: "Jan 2026 - Present",
+    period: "Jan 2026 - April 2026",
     desc: "Building production-grade web apps with React, Next.js, Node.js, and MongoDB. Working on client projects and contributing to scalable architecture.",
   },
   {
     type: "edu",
     title: "Masters of Computer Applications (MCA)",
     org: "Chandigarh University",
-    period: "2024 - Present",
+    period: "2024 - 2026",
     desc: "Focused on software engineering, data structures, and real-world project development. Active in placement preparation.",
   },
   {
@@ -49,36 +56,54 @@ const ExperienceSection = () => {
           {/* Timeline line */}
           <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border" />
 
-          {timeline.map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 40 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              className={`relative flex items-start gap-6 mb-12 ${
-                i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
-            >
-              {/* Dot */}
-              <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary z-10 shadow-[0_0_12px_hsl(170_80%_50%_/_0.5)]" />
+          
+{timeline.map((item, i) => (
+  <motion.div
+    key={item.title}
+    initial={{ opacity: 0, y: 40 }}
+    animate={inView ? { opacity: 1, y: 0 } : {}}
+    transition={{ duration: 0.6, delay: i * 0.2 }}
+    className={`relative flex items-start mb-12 ${
+      i % 2 === 0 ? "md:justify-start" : "md:justify-end"
+    }`}
+  >
+    {/* Timeline Dot */}
+    <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary z-10 shadow-[0_0_12px_hsl(170_80%_50%_/_0.5)]" />
 
-              <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8"}`}>
-                <div className="glass rounded-xl p-6 hover:border-primary/30 transition-all">
-                  <div className={`flex items-center gap-2 mb-2 ${i % 2 === 0 ? "md:justify-end" : ""}`}>
-                    {item.type === "work" ? (
-                      <Briefcase size={16} className="text-primary" />
-                    ) : (
-                      <GraduationCap size={16} className="text-secondary" />
-                    )}
-                    <span className="font-mono text-xs text-muted-foreground">{item.period}</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1">{item.title}</h3>
-                  <p className="text-primary text-sm mb-2">{item.org}</p>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+    {/* Timeline Card */}
+    <div
+      className={`ml-16 w-[calc(100%-4rem)] md:ml-0 md:w-[calc(50%-2rem)] ${
+        i % 2 === 0
+          ? "md:mr-auto md:pr-8 md:text-right"
+          : "md:ml-auto md:pl-8 md:text-left"
+      }`}
+    >
+      <div className="glass rounded-xl p-6 hover:border-primary/30 transition-all">
+        <div
+          className={`flex items-center gap-2 mb-2 ${
+            i % 2 === 0 ? "md:justify-end" : ""
+          }`}
+        >
+          {item.type === "work" ? (
+            <Briefcase size={16} className="text-primary" />
+          ) : (
+            <GraduationCap size={16} className="text-secondary" />
+          )}
+          <span className="font-mono text-xs text-muted-foreground">
+            {item.period}
+          </span>
+        </div>
+
+        <h3 className="text-lg font-semibold text-foreground mb-1">
+          {item.title}
+        </h3>
+        <p className="text-primary text-sm mb-2">{item.org}</p>
+        <p className="text-muted-foreground text-sm">{item.desc}</p>
+      </div>
+    </div>
+  </motion.div>
+))}
+
         </div>
       </div>
     </section>

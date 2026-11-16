@@ -70,7 +70,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="Resumee.pdf"
+              href="Mayank_Chugh_Full_Stack_Developer_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-glow w-full sm:w-auto text-center px-6 py-3 flex items-center justify-center gap-2"
