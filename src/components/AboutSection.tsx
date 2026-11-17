@@ -22,7 +22,7 @@ const cards = [
   {
     icon: GraduationCap,
     title: "MCA Student",
-    desc: "Currently pursuing MCA with a strong focus on real-world projects and placement preparation.",
+    desc: "Completed MCA with a strong focus on building real-world projects, strengthening technical skills, and applying software development concepts to practical challenges.",
   },
 ];
 
