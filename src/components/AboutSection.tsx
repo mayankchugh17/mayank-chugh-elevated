@@ -6,7 +6,7 @@ import { Code2, Rocket, GraduationCap, BrainCircuit } from "lucide-react";
 const cards = [
   {
     icon: Code2,
-    title: "MERN Stack Developer",
+    title: "Full Stack Developer",
     desc: "Specializing in MongoDB, Express.js, React.js, and Node.js to build end-to-end web applications.",
   },
   {
